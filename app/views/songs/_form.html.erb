@@ -5,8 +5,7 @@
   <%= f.text_field :artist_name %>
   <br />
 
-  <%= artist_id_field(@song) %>
-  <%= f.hidden_field :artist_id %>
-
+  <%= artist_select(@song.artist, @song)%>
+    
   <%= f.submit %>
 <% end %>
